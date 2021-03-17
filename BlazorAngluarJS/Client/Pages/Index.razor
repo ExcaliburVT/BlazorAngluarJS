@@ -4,8 +4,6 @@
 
 <h1>Hello, world!</h1>
 
-
-
 <div ng-app="myApp" ng-controller="myCtrl">
 
     Testing AngularJS From Index
@@ -22,8 +20,12 @@
 
 
 @code {
-    protected override async Task OnInitializedAsync()
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JS.InvokeVoidAsync("reinitAngular");
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("reinitAngular");
+        }
     }
 }

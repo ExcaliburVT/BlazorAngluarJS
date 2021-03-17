@@ -14,12 +14,14 @@
     <br>
     Full Name: {{firstName + " " + lastName}}
 
-    <input value="reinitAngular"  type="button" onclick="reinitAngular()" />
-
 </div>
 @code {
-    protected override async Task OnInitializedAsync()
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JS.InvokeVoidAsync("reinitAngular");
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("reinitAngular");
+        }
     }
 }

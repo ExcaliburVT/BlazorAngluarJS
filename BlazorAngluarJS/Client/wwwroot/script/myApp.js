@@ -4,11 +4,7 @@ function reinitAngular() {
     var injector = $('[ng-app]').injector();
     var $compile = injector.get('$compile');
     var $rootScope = injector.get('$rootScope');
-
-
     var appElement = $('[ng-app]');
-
-
     $compile(appElement)($rootScope);
     $rootScope.$digest();
 }
