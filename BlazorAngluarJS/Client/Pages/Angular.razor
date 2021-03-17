@@ -2,14 +2,19 @@
 @page "/angular"
 @inject IJSRuntime JS;
 
-<h3>Angular</h3>
+<div ng-app="myApp" ng-controller="myCtrl">
 
-Testing AngularJS
+    Testing AngularJS
 
-<p>Name: <input type="text" ng-model="name"></p>
-<p>You wrote: {{ name }}</p>
+    <p>Name: <input type="text" ng-model="name"></p>
+    <p>You wrote: {{ name }}</p>
 
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
 
+</div>
 @code {
     protected override async Task OnInitializedAsync()
     {

@@ -1,7 +1,29 @@
 ﻿@page "/"
+@inject IJSRuntime JS;
+
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    Testing AngularJS From Index
+
+    <p>Name: <input type="text" ng-model="name"></p>
+    <p>You wrote: {{ name }}</p>
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await JS.InvokeVoidAsync("reinitAngular");
+    }
+}
