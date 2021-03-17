@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAngluarJS.Server", "BlazorAngluarJS\Server\BlazorAngluarJS.Server.csproj", "{FA1BE8B8-757C-4BC4-99DA-75240DFDDC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAngluarJS.Client", "BlazorAngluarJS\Client\BlazorAngluarJS.Client.csproj", "{EF6B95D8-737E-4F6D-96BC-63B497761E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAngluarJS.Shared", "BlazorAngluarJS\Shared\BlazorAngluarJS.Shared.csproj", "{F70AB9DD-D81F-4BF8-9BA6-1DD0A15CB43B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA1BE8B8-757C-4BC4-99DA-75240DFDDC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1BE8B8-757C-4BC4-99DA-75240DFDDC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1BE8B8-757C-4BC4-99DA-75240DFDDC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1BE8B8-757C-4BC4-99DA-75240DFDDC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6B95D8-737E-4F6D-96BC-63B497761E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6B95D8-737E-4F6D-96BC-63B497761E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6B95D8-737E-4F6D-96BC-63B497761E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6B95D8-737E-4F6D-96BC-63B497761E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70AB9DD-D81F-4BF8-9BA6-1DD0A15CB43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70AB9DD-D81F-4BF8-9BA6-1DD0A15CB43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70AB9DD-D81F-4BF8-9BA6-1DD0A15CB43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70AB9DD-D81F-4BF8-9BA6-1DD0A15CB43B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F2B99FD-3881-4A39-9A34-E8AFBA43ACC5}
+	EndGlobalSection
+EndGlobal

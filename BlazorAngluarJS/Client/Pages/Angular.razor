@@ -1,0 +1,18 @@
+﻿
+@page "/angular"
+@inject IJSRuntime JS;
+
+<h3>Angular</h3>
+
+Testing AngularJS
+
+<p>Name: <input type="text" ng-model="name"></p>
+<p>You wrote: {{ name }}</p>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await JS.InvokeVoidAsync("reinitAngular");
+    }
+}
